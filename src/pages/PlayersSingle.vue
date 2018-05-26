@@ -15,7 +15,7 @@ export default {
   },
   created: function () {
     this.axios
-      .get('http://statsapi.web.nhl.com/api/v1/people/' + this.$route.params.id)
+      .get('https://statsapi.web.nhl.com/api/v1/people/' + this.$route.params.id)
       .then(response => {
         this.player = response.data.people[0]
       })

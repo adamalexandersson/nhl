@@ -27,7 +27,7 @@ export default {
   },
   created: function () {
     this.axios
-      .get('http://statsapi.web.nhl.com/api/v1/teams/')
+      .get('https://statsapi.web.nhl.com/api/v1/teams/')
       .then(response => {
         this.teams = response.data.teams
       })
