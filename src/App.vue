@@ -44,16 +44,17 @@
       </md-app-drawer>
 
       <md-app-content>
-        <transition name="fade" mode="out-in">
+        <!-- <transition name="fade" mode="out-in">
           <router-view></router-view>
-        </transition>
+        </transition> -->
+        <router-view></router-view>
       </md-app-content>
     </md-app>
 
     <md-bottom-bar md-sync-route md-type="fixed" class="fixed-bottom">
       <md-bottom-bar-item to="/" md-label="Home" md-icon="home"></md-bottom-bar-item>
-      <md-bottom-bar-item to="/games" md-label="Games" md-icon="assignment"></md-bottom-bar-item>
-      <md-bottom-bar-item to="/players" md-label="Players" md-icon="people"></md-bottom-bar-item>
+      <md-bottom-bar-item to="/teams" md-label="Teams" md-icon="group"></md-bottom-bar-item>
+      <md-bottom-bar-item to="/scoreboard" md-label="Scoreboard" md-icon="format_list_numbered"></md-bottom-bar-item>
     </md-bottom-bar>
   </div>
 </template>

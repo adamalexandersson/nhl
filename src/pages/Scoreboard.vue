@@ -1,7 +1,7 @@
 <template>
   <div id="players">
     <md-progress-spinner md-mode="indeterminate" v-if="players.length == 0"></md-progress-spinner>
-    <md-list class="md-triple-line">
+    <md-list class="md-triple-line" v-if="players.length > 0">
       <md-list-item v-for="player in orderedPlayers" :key="player.person.id" :to="'/players/' + player.person.id">
         <md-avatar>
           <img :src="'https://nhl.bamcontent.com/images/headshots/current/168x168/' + player.person.id + '.png'" :alt="player.person.fullName">
