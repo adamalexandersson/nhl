@@ -1,6 +1,5 @@
 <template>
   <div id="team-single">
-    
   </div>
 </template>
 
